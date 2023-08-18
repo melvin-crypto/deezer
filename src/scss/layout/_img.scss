@@ -1,0 +1,31 @@
+@import '../partials/font';
+
+img {
+  max-width: $width-img;
+}
+
+#logo-deezer {
+  width: $logo-site-width;
+  line-height: 0;
+  z-index: 10;
+}
+
+.logo-play{
+  cursor: pointer;
+}
+
+.loupe-icon {
+  width: $loup-icon-with;
+  height: $loup-icon-with;
+  margin: $loup-icon-margin;
+}
+
+@media screen and (max-width: 1000px) {
+  #logo-deezer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid transparent;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../partials/color';
+@import '../partials/font';
+
+h1 {
+  font-size: $h1-size;
+
+  &, h2 {
+    color: $title-color;
+  }
+}
+
+h3 {
+  color: $sous-title-color;
+}
+
+.login-title {
+  text-align: center;
+  font-size: $h2-size;
+  margin-bottom: $global-margin-padding;
+
+  &-black {
+    color: $title-login-color;
+  }
+}
+
+.login-form h1, #signup-form h1 {
+  font-size: $h2-size;
+  margin-bottom: $global-margin-padding;
+}
+
+@media screen and (max-width: 1000px) {
+  h1, h2, h3 {
+    text-align: center;
+  }
+}

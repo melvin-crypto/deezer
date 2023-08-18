@@ -1,0 +1,75 @@
+@import '../partials/color';
+
+table.typography-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  & th, & td {
+    padding: 10px;
+  }
+
+  & th {
+    text-align: left;
+    border: 1px solid $table-color-cell;
+  }
+
+  & tr {
+    border: 1px solid $table-color-cell;
+  }
+
+  & tbody tr {
+
+    &:nth-child(even) {
+      background-color: $section-color-typography-even;
+    }
+
+    &:nth-child(odd) {
+      background-color: $section-color-typography-odd;
+    }
+
+    & td {
+
+      &:not(tbody tr td:nth-child(2)) {
+        text-align: left;
+      }
+
+      &:not(tbody tr td:last-child) {
+        border: 1px solid $table-color-cell;
+      }
+
+      & p.color-first-p {
+        color: $p-color !important;
+      }
+
+      & p.color-second-p {
+        color: $p-second-color !important;
+      }
+
+      &:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: right;
+      }
+    }
+  }
+
+  & thead tr.titre-table th {
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+.color-circle {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.typography-table .align-right {
+  text-align: right;
+}

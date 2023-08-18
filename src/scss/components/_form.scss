@@ -1,0 +1,25 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.login-form {
+  padding: $global-margin-padding;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: $global-margin-padding;
+  width: 50%;
+
+  &-white{
+    background-color: $form-background-color;
+  }
+}
+
+.signup-form {
+  padding: 10px;
+  margin-bottom: $global-margin-padding;
+}
+
+@media screen and (max-width: 767px) {
+  .login-form {
+    width: 100%;
+  }
+}

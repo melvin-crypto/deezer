@@ -1,0 +1,49 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.artists-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.artist-item {
+  text-align: center;
+  flex-basis: calc(25% - 20px);
+  padding: $global-margin-padding;
+
+  & img:hover{
+    opacity: 0.6;
+  }
+
+  & h3 {
+    font-size: $h3-size;
+    font-weight: bold;
+    color: $title-color;
+  }
+
+  & p {
+    font-size: $p-size;
+    color: $p-color;
+  }
+
+  & figure {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  & img{
+    height: $artist-img-width;
+    border-radius: $artist-img-border;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .artist {
+    width: 100%;
+
+    &s-container{
+      display: block;
+    }
+  }
+}

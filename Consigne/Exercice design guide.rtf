@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25100\viewh12680\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 Exercice SCSS\
+
+\f1\b0 utilisation de partials\
+cr\'e9ation de composants css
+\fs24 \
+\
+1/ Cr\'e9er une page html \'e0 partir du design guide fourni :\
+h1, h2, p, .button, .banner\
+\
+2/ Lier la page \'e0 main.css\
+Importer de nouveaux partials dans main.scss : \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 fonts
+\f1\b0 \
+- font1 : Montserrat\
+- font2 : Lato\
+\
+
+\f0\b variables
+\f1\b0 \
+white: #FFF;\
+grey: #AAA;\
+light-grey: #F2F2F2;\
+dark-grey: #444;\
+red: #ce0a0a;\
+green: #31aa66;\
+\
+
+\f0\b functions
+\f1\b0 \
+- function rem() qui renvoie une valeur rem \'e0 partir d'un param\'e8tre en px\
+- mixin cover-bg\
+\
+
+\f0\b globals
+\f1\b0 \
+- balises g\'e9n\'e9rales (*, html, body, h1, p...)\
+- body : bg light-grey & font1\
+- h1 24px & font2, h2 16px & font2\
+- classe container\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 components/
+\f1\b0 \
+\
+
+\f0\b button
+\f1\b0 \
+- transition au survol (bg 10% plus clair), padding...\
+- modificateurs : --alert, --success\
+\
+
+\f0\b banner
+\f1\b0 \
+- fait toute la largeur, la hauteur repr\'e9sente 42% de la largeur (utiliser du padding vertical)\
+- utilise le mixin cover-bg\
+- modificateur : --text}

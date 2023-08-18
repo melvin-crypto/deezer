@@ -1,0 +1,91 @@
+//Global color on the site
+$background-site: #000000;
+$white-global-color: #FFFFFF;
+$blue-global-color: #1E90FF;
+$red-global-color: #FF3A00;
+$aside-background-color: #262626;
+
+// Color border global on the site
+$border-hr-tracklist: $white-global-color;
+$border-hr: #818181;
+$border-explicit: $border-hr;
+$border-dropdown: $border-hr;
+
+// Color hover on the site
+$hover-color: #0078D7;
+$hover-background-color: #818181;
+
+// Link hypertext
+$a-color: $blue-global-color;
+$a-second-color: #e0dddd;
+$a-active-color: $blue-global-color;
+
+// Color texte
+$p-color: #e0dddd;
+$p-second-color: #282828;
+
+// Color liste
+$li-color: $white-global-color;
+
+// Color searchbar component
+$searchbar-background-color: #ffffff00;
+
+// Color button component
+$button-background-color: $red-global-color;
+$button-text-color: $white-global-color;
+$button-hover-background-color: #E23A00;
+
+// Color toggle component
+$toggle-hover: $white-global-color;
+$toggle-extra-color: $blue-global-color;
+
+// Color form component
+$form-background-color: $white-global-color;
+$form-border-color: #D9D9D9;
+
+$password-strong: $red-global-color;
+
+// Color input component
+$input-border-color: #D9D9D9;
+$input-focus-passwd-border-color: $red-global-color;
+$input-focus-border-color: $blue-global-color;
+
+// Color titre global component
+$title-color: $white-global-color;
+$title-login-color: #0e0e0e;
+$sous-title-color: #cecece;
+
+// Color mix component
+$title1-description-color: #885be6;
+$title2-description-color: #e14b83;
+$title3-description-color: #e64f37;
+$title4-description-color: #ab3dad;
+$title5-description-color: #2b7cca;
+$title6-description-color: #e9555d;
+
+// Color musicbar component
+$musicbar-progressbar: #cccccc;
+$musicbar-background-color: $aside-background-color;
+
+// Color input + text component
+$eye-password: #3d3d3d;
+$input-text-color: #5f5f5f;
+
+// Color musiclist component
+$carousel-background-color: $aside-background-color;
+
+// Color footer component
+$footer-color: $background-site;
+$footer-background-color: $white-global-color;
+
+// Color designGuide page
+$design-guide-color: $white-global-color;
+$section-color-typography: #f0f7f4;
+$section-color-typography-odd: #f0f7f4;
+$section-color-typography-even: #c5e3de ;
+$table-color-cell: #ccc;
+
+// Color dropdown component
+$dropdown-hover: #8F8F8FFF;
+$dropdown-background-color: $aside-background-color;
+$dropdown-li-color: $red-global-color;

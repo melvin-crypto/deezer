@@ -1,0 +1,76 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.infos-album {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  column-gap: 4.5%;
+  padding: 40px 0;
+}
+
+.cover-album {
+  width: 380px;
+  height: 391px;
+}
+
+.details-album {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  & img{
+    width: 35px;
+    border-radius: 50px;
+  }
+}
+
+.description-album {
+  font-size: 18px;
+  padding-top: 10px;
+  color: $p-color;
+}
+
+.titre-album {
+  font-weight: 700;
+  font-size: 30px;
+  color: $title-color;
+  margin: 0;
+  text-align: left;
+}
+
+.sous-titre-artiste {
+  font-size: $h3-size;
+  color: $sous-title-color;
+  margin: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+@media(max-width: 600px) {
+  .cover-album {
+    width: 236px;
+    height: 243px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .details-album {
+    width: 100%;
+    align-items: center;
+    height: 350px;
+    justify-content: space-around;
+  }
+
+  .sous-titre-artiste, .titre-album, .description-album {
+    text-align: center;
+  }
+
+  .titre-album {
+    font-size: 36px;
+  }
+  .sous-titre-artiste {
+    font-size: $h2-size;
+  }
+}

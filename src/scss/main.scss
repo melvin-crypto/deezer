@@ -1,0 +1,72 @@
+@import "components/a";
+@import "components/artist";
+@import "components/button";
+@import "components/dropdown";
+@import "components/footer";
+@import "components/form";
+@import "components/input";
+@import "components/menubutton";
+@import "components/mix";
+@import "components/musicalbum";
+@import "components/musicbar";
+@import "components/musiclist";
+@import "components/nav";
+@import "components/searchbar";
+@import "components/section";
+@import "components/title";
+@import "components/toggle";
+@import "components/thumbnail";
+@import "layout/aside";
+@import "layout/colorsection";
+@import "layout/coveralbum";
+@import "layout/designguide";
+@import "layout/container";
+@import "layout/img";
+@import "layout/inscription";
+@import "layout/login";
+@import "layout/typographytable";
+@import "layout/xmp";
+@import "partials/color";
+@import "partials/font";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, h1, form, label, input, button, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-site;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-beetween {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    margin-top: 60px;
+  }
+}

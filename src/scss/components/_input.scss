@@ -1,0 +1,48 @@
+@import'../partials/color';
+@import'../partials/font';
+
+.login-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+
+  &-border{
+    border: 1px solid $input-border-color;
+  }
+
+  &-information{
+    color: $input-text-color;
+  }
+
+  &-password{
+    color: $eye-password;
+
+    &:focus{
+      border: 1px solid $input-focus-passwd-border-color!important;
+    }
+  }
+
+  &:focus{
+    border-color: $input-focus-border-color;
+  }
+}
+
+/* Styles pour l'icône de l'œil */
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  transform: translateY(+35%);
+  cursor: pointer;
+
+  img {
+    width: $password-toggle-width;
+    height: $password-toggle-width;
+  }
+}
+
+.password-input-wrapper {
+  position: relative;
+}

@@ -1,0 +1,30 @@
+#menu-button {
+  display: none;
+  z-index: 10;
+  background-color: transparent;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../src/assets/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &.cancel::before {
+    background-image: url("../src/assets/cancel.svg");
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #menu-button {
+    display: inline-block;
+    margin: 44px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../partials/color';
+
+.password-strength {
+  color: $password-strong;
+}
+
+#signup-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.password-hint {
+  margin-top: 5px;
+  font-size: 12px;
+}

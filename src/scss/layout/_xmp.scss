@@ -1,0 +1,13 @@
+xmp{
+  background-color: white;
+  border-radius: 25px;
+  color: black!important;
+  padding: 30px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  xmp {
+    zoom: 0.5;
+  }
+}

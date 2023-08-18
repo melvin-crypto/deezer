@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+    <title>Guide de Design</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/js/login.js"></script>
+    <script src="../src/js/password-toggle.js"></script>
+    <script src="../src/js/music.js"></script>
+    <script src="../src/js/nav.js"></script>
+    <script src="../src/js/dropdown.js"></script>
+    <audio id="audio" src="../src/assets/gasolina.mp3"></audio>
+</head>
+<body class="design-guide">
+
+<section class="section-first">
+    <h1>Guide de Design</h1>
+</section>
+
+<section class="section-color">
+    <h2>Couleurs Globales</h2>
+    <div class="color-row">
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #000000;"></div>
+            <div class="color-description">
+                <p>Couleur de fond du site</p>
+                <span>#000000</span>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #FFFFFF;"></div>
+            <div class="color-description">
+                <p>Couleur blanche utilisée globalement</p>
+                <span>#FFFFFF</span>
+            </div>
+        </div>
+    </div>
+    <div class="color-row">
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #262626;"></div>
+            <div class="color-description">
+                <p>Couleur foncée utilisée pour l'aside général du site</p>
+                <span>#262626</span>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #FF3A00;"></div>
+            <div class="color-description">
+                <p>Couleur rouge utilisée globalement</p>
+                <span>#FF3A00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-color">
+    <h2>Couleurs des Composants</h2>
+    <div class="color-row">
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #1E90FF;"></div>
+            <div class="color-description">
+                <p>Couleur utilisée pour les toggle ou les liens hypertext</p>
+                <span>#1E90FF</span>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #E23A00;"></div>
+            <div class="color-description">
+                <p>Couleur de fond des boutons</p>
+                <span>#E23A00</span>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #818181;"></div>
+            <div class="color-description">
+                <p>Couleur de bordure utilisée pour certaines séparations</p>
+                <span>#818181</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-color">
+    <h2>Couleurs de Texte</h2>
+    <div class="color-row">
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #e0dddd;"></div>
+            <div class="color-description">
+                <p>Deuxième couleur utilisée pour les liens hypertextes</p>
+                <span>#e0dddd</span>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color-circle" style="background-color: #5f5f5f;"></div>
+            <div class="color-description">
+                <p>Couleur du texte dans les champs de saisie</p>
+                <span>#5f5f5f</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Styles de Typographie -->
+<section class="section-typography">
+    <h2>Exemples de Typographie</h2>
+
+    <table class="typography-table">
+        <thead>
+        <tr class="titre-table">
+            <th>Type de Typographie</th>
+            <th>Taille (px)</th>
+            <th>Utilité</th>
+            <th>Couleur de Texte</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><h1>Titre de niveau 1</h1></td>
+            <td>28</td>
+            <td>Titre principal</td>
+            <td><span class="color-circle" style="background-color: #ffffff;"></span> #FFFFFF</td>
+        </tr>
+        <tr>
+            <td><h2>Titre de niveau 2</h2></td>
+            <td>24</td>
+            <td>Titre secondaire</td>
+            <td><span class="color-circle" style="background-color: #000000;"></span> #000000</td>
+        </tr>
+        <tr>
+            <td><h3>Sous-titre de niveau 3</h3></td>
+            <td>18</td>
+            <td>Sous-titre</td>
+            <td><span class="color-circle" style="background-color: #cecece;"></span> #cecece</td>
+        </tr>
+        <tr>
+            <td><h1 class="login-title">Titre de connexion</h1></td>
+            <td>24</td>
+            <td>Titre de connexion</td>
+            <td><span class="color-circle" style="background-color: #FFFFFF;"></span> #FFFFFF</td>
+        </tr>
+        <tr>
+            <td><h1 class="login-title login-title-black">Titre de connexion en noir</h1></td>
+            <td>24</td>
+            <td>Titre de connexion avec classe</td>
+            <td><span class="color-circle" style="background-color: #0e0e0e;"></span> #0E0E0E</td>
+        </tr>
+        <tr>
+            <td><h1>Titre du Formulaire de Connexion</h1></td>
+            <td>28</td>
+            <td>Titre de formulaire</td>
+            <td><span class="color-circle" style="background-color: #FFFFFF;"></span> #FFFFFF</td>
+        </tr>
+        <tr>
+            <td><p class="color-first-p">Premier Texte de paragraphe</p></td>
+            <td>16</td>
+            <td>Paragraphe n°1</td>
+            <td><span class="color-circle" style="background-color: #282828;"></span> #282828</td>
+        </tr>
+        <tr>
+            <td><p class="color-second-p">Second Texte de paragraphe</p></td>
+            <td>16</td>
+            <td>Paragraphe n°2</td>
+            <td><span class="color-circle" style="background-color: #e0dddd;"></span> #e0dddd</td>
+        </tr>
+        <tr>
+            <td><a href="#" class="forgot-password-link">Texte de lien</a></td>
+            <td>16</td>
+            <td>Lien avec hover</td>
+            <td><span class="color-circle" style="background-color: #0078D7;"></span> #0078D7</td>
+        </tr>
+        <tr>
+            <td><a href="#" class="active">Texte de lien</a></td>
+            <td>16</td>
+            <td>Lien actif</td>
+            <td><span class="color-circle" style="background-color: #1E90FF;"></span> #1E90FF</td>
+        </tr>
+        <tr>
+            <td><a href="#" id="signup-form-link">Lien dans un formulaire</a></td>
+            <td>16</td>
+            <td>Lien sans hover</td>
+            <td><span class="color-circle" style="background-color: #e0dddd;"></span> #e0dddd</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="class-description">Cette section montre divers exemples de <strong>titres</strong> et de <strong>sous-titres</strong>
+        utilisant différentes
+        classes pour styliser les éléments de <strong>texte</strong>. Les <strong>titres de niveaux 1, 2 et 3</strong>
+        sont illustrés pour montrer leur
+        hiérarchie. Les <strong>classes</strong> sont utilisées pour appliquer des styles spécifiques aux <strong>titres
+            de connexion</strong> et aux <strong>titres de formulaires</strong>. Les <strong>titres à l'intérieur des
+            formulaires</strong>
+        indiquent clairement le but du <strong>formulaire</strong>, que ce soit une <strong>connexion</strong> ou une
+        <strong>inscription</strong>.</p>
+</section>
+
+<!-- Styles d'Artiste -->
+<section>
+    <h2>Styles d'Artiste</h2>
+    <div class="artists-container">
+        <div style="flex: auto" class="artist-item">
+            <img src="../src/assets/artiste-1.jpg" alt="Artiste 1">
+            <h3>Nom de l'Artiste</h3>
+            <p>Description de l'artiste</p>
+        </div>
+        <div style="flex: auto" class="artist-item">
+            <img src="../src/assets/artiste-2.jpg" alt="Artiste 2">
+            <h3>Nom de l'Artiste</h3>
+            <p>Description de l'artiste</p>
+        </div>
+    </div>
+    <p class="class-description">Ces classes définissent le style des éléments d'artiste et leur mise en page.</p>
+    <xmp>
+        <div class="artists-container">
+            <div class="artist-item">
+                <img src="../src/assets/artiste-1.jpg" alt="Artiste 1">
+                <h3>Nom de l'Artiste</h3>
+                <p>Description de l'artiste</p>
+            </div>
+            <div style="flex: auto" class="artist-item">
+                <img src="../src/assets/artiste-2.jpg" alt="Artiste 2">
+                <h3>Nom de l'Artiste</h3>
+                <p>Description de l'artiste</p>
+            </div>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Bouton -->
+<section>
+    <h2>Styles de Bouton</h2>
+    <div class="center">
+        <button class="button">Se connecter</button>
+        <button class="button button-red">Se connecter</button>
+    </div>
+    <p class="class-description">Ces classes définissent le style des boutons avec des variations de couleur.</p>
+    <xmp>
+        <button class="button button-red login-button" type="submit">Se connecter</button>
+    </xmp>
+</section>
+
+<!-- Styles de Dropdown album -->
+<section class="dropdown-section">
+    <h2>Styles de Dropdown Album</h2>
+    <div class="dropdown" id="dropdown">
+        <button type="button" class="dropdown-button">
+            Moods
+            <span class="dropdown-icon">
+        <img src="../src/assets/chevron-down.png" alt="Chevron Down">
+      </span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">
+                <button>Genres</button>
+            </li>
+            <li class="dropdown-item">
+                <button class="active">Moods</button>
+            </li>
+        </ul>
+    </div>
+    <p class="class-description">Ces classes définissent le style d'un dropdown avec des options pour les genres et les
+        moods.</p>
+    <p class="class-usage">Utilisation : Utilisé pour afficher un dropdown avec des options pour les genres et les moods
+        d'un album.</p>
+    <xmp>
+        <div class="dropdown" id="dropdown">
+            <button type="button" class="dropdown-button">
+                Moods
+                <span class="dropdown-icon">
+        <img src="../src/assets/chevron-down.png" alt="Chevron Down">
+      </span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                    <button>Genres</button>
+                </li>
+                <li class="dropdown-item">
+                    <button class="active">Moods</button>
+                </li>
+            </ul>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Footer -->
+<section class="section-footer">
+    <h2>Styles de Footer</h2>
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Légal</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">À propos des pubs</a></li>
+                </ul>
+            </nav>
+            <small>
+                © 2022 Deezer AB
+            </small>
+        </div>
+    </footer>
+    <p class="class-description">Ces classes définissent le style d'un footer avec une navigation et les informations de
+        droits d'auteur.</p>
+    <xmp>
+        <footer>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Légal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">À propos des pubs</a></li>
+                    </ul>
+                </nav>
+                <small>
+                    © 2022 Deezer AB
+                </small>
+            </div>
+        </footer>
+    </xmp>
+</section>
+
+<!-- Styles de Formulaire -->
+<section>
+    <h2>Styles de Formulaire de Connexion</h2>
+    <div class="center">
+        <div class="login-form login-form-white">
+            <form id="login-form">
+                <h1 class="login-title login-title-black">Connexion à Deezer</h1>
+                <label class="login-label">Adresse email :</label>
+                <div class="password-input-container">
+                    <label class="login-label">Mot de passe :</label>
+                    <div class="password-input-wrapper">
+                    </div>
+                </div>
+                <button class="button button-red login-button">Se connecter</button>
+            </form>
+        </div>
+    </div>
+    <p class="class-description">Ce composant représente un formulaire de connexion avec différents styles pour les
+        labels, les champs de texte, les boutons, etc.</p>
+    <xmp>
+        <div class="login-form login-form-white">
+            <form id="login-form">
+                <h1 class="login-title login-title-black">Connexion à Deezer</h1>
+                <label class="login-label">Adresse email :</label>
+                <div class="password-input-container">
+                    <label class="login-label">Mot de passe :</label>
+                    <div class="password-input-wrapper">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Input -->
+<section class="section-input">
+    <h2>Styles d'Inputs</h2>
+    <input class="login-input login-input-information login-input-border" type="text" id="username" name="username"
+           required>
+
+    <p class="class-description">Ce composant représente un champ de texte avec différentes classes pour les labels, les
+        bordures, les icônes, etc.</p>
+    <div class="password-input-container">
+        <div class="password-input-wrapper">
+            <input class="login-input login-input-border login-input-password" type="password" id="password"
+                   name="password" required>
+            <span class="password-toggle" data-target="password">
+                      <img id="eye-icon" src="../src/assets/oeilFerme.png" alt="Toggle password visibility">
+                    </span>
+        </div>
+    </div>
+    <p class="class-description">Ce composant représente un champ de mot de passe avec une icône pour basculer la
+        visibilité du mot de passe.</p>
+    <xmp>
+        <input class="login-input login-input-information login-input-border" type="text" id="username" name="username"
+               required>
+
+        <div class="password-input-wrapper">
+            <input class="login-input login-input-border login-input-password" type="password" id="password"
+                   name="password" required>
+            <span class="password-toggle" data-target="password">
+                <img id="eye-icon" src="../src/assets/oeilFerme.png" alt="Toggle password visibility">
+            </span>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Menu button et site nav -->
+<section>
+    <h2>Menu Button</h2>
+    <button id="menu-button"></button>
+    <p class="class-description">Ce composant représente un bouton de menu qui peut être utilisé pour ouvrir ou fermer
+        un menu de navigation.</p>
+
+    <xmp>
+        <button id="menu-button"></button>
+    </xmp>
+
+    <nav id="site-nav">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a>Accueil</a></li>
+            <li>Musique</li>
+            <li>Podcasts</li>
+            <li>Radios</li>
+            <li>Concerts</li>
+            <li><a>Parcourir</a></li>
+            <li>Favoris</li>
+            <li>Coups de cœur</li>
+            <li>Playlists</li>
+            <li>Albums</li>
+            <li>Artistes</li>
+            <li>Podcasts</li>
+            <li><a>DesignGuide</a></li>
+        </ul>
+    </nav>
+    <p class="class-description">Ce composant représente la barre de navigation principale du site. Elle peut être
+        affichée horizontalement ou sous forme de menu déroulant sur les écrans de petite largeur.</p>
+    <xmp>
+        <nav id="site-nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a>Accueil</a></li>
+                <li>Musique</li>
+                <li>Podcasts</li>
+                <li>Radios</li>
+                <li>Concerts</li>
+                <li><a>Parcourir</a></li>
+                <li>Favoris</li>
+                <li>Coups de cœur</li>
+                <li>Playlists</li>
+                <li>Albums</li>
+                <li>Artistes</li>
+                <li>Podcasts</li>
+                <li><a>DesignGuide</a></li>
+            </ul>
+        </nav>
+    </xmp>
+</section>
+
+<!-- Styles de Mix -->
+<section>
+    <h2>Mix Styles</h2>
+    <div class="center">
+        <article class="flow-item rap">
+            <a class="logo-link">
+                <img id="play-button" class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+            </a>
+            <h3>Rap</h3>
+        </article>
+    </div>
+    <p class="class-description">Ce composant représente un élément de mix de musique avec une image de fond
+        correspondant au genre de musique et un bouton de lecture.</p>
+    <xmp>
+        <article class="flow-item rap">
+            <a class="logo-link">
+                <img id="play-button" class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+            </a>
+            <h3>Rap</h3>
+        </article>
+    </xmp>
+</section>
+
+<!-- Styles de Musicbar -->
+<section>
+    <h2>Barre de Lecture Musicale</h2>
+    <div>
+        <div class="d-flex">
+            <button id="music-bar-play-button">
+                <img class="logo-play" src="../src/assets/play.png" alt="Logo Pause">
+            </button>
+            <span id="music-bar-info" class="music-bar-info">Nom de la Chanson - Artiste</span>
+        </div>
+        <div id="music-bar-progress" class="music-bar-progress"></div>
+    </div>
+    <p class="class-description">Cette section représente une barre de lecture musicale avec un bouton de lecture,
+        les informations de la chanson et une barre de progression visuelle. Les classes sont utilisées pour aligner les
+        éléments en ligne, styliser les informations de la chanson et la barre de progression, ainsi que pour afficher
+        l'icône de lecture/pause appropriée.</p>
+    <xmp>
+        <div class="d-flex">
+            <button id="music-bar-play-button">
+                <img class="logo-play" src="../src/assets/play.png" alt="Logo Pause">
+            </button>
+            <span id="music-bar-info" class="music-bar-info">Nom de la Chanson - Artiste</span>
+        </div>
+        <div id="music-bar-progress" class="music-bar-progress"></div>
+    </xmp>
+</section>
+
+<!-- Styles de Liste music dans l'album -->
+<section class="section-music-album">
+    <h2>Styles d'Album Musical</h2>
+    <div class="infos-chanson titre infos-album">
+        <div class="numero-chanson titre-column-tracklist">#</div>
+        <div class="titre-chanson titre-chanson-without-explicit titre-column-tracklist">Titre</div>
+        <div class="temps-chanson titre-column-tracklist">Durée</div>
+    </div>
+    <hr class="hr-tracklist">
+    <div class="tracklist">
+        <div class="infos-chanson">
+            <p class="numero-chanson">1.</p>
+            <p class="titre-chanson titre-chanson-without-explicit">Introduction</p>
+            <p class="temps-chanson">01:34</p>
+        </div>
+        <hr>
+    </div>
+    <p class="class-description">Cette section présente le style visuel d'un album musical, avec des informations sur
+        chaque chanson,
+        y compris le numéro, le titre et la durée. Les classes sont utilisées pour formater les informations de manière
+        structurée
+        et esthétique, tout en respectant l'alignement et le style spécifiés.</p>
+    <xmp>
+        <div class="infos-chanson titre infos-album">
+            <div class="numero-chanson titre-column-tracklist">#</div>
+            <div class="titre-chanson titre-chanson-without-explicit titre-column-tracklist">Titre</div>
+            <div class="temps-chanson titre-column-tracklist">Durée</div>
+        </div>
+        <hr class="hr-tracklist">
+        <div class="tracklist">
+            <div class="infos-chanson">
+                <p class="numero-chanson">1.</p>
+                <p class="titre-chanson titre-chanson-without-explicit">Introduction</p>
+                <p class="temps-chanson">01:34</p>
+            </div>
+            <hr>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Music liste dans la page utilisateur -->
+<section>
+    <h2>Liste de Musique</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel-item">
+            <figure>
+                <img src="../src/assets/album-1.jpg" alt="Album 1">
+            </figure>
+            <div class="info">
+                <h4><a>Sincèrement</a></h4>
+                <p>Hamza</p>
+            </div>
+        </div>
+    </div>
+    <!-- Ajoutez d'autres éléments similaires pour la liste -->
+    <p class="class-description">Cette section présente une liste de musique sous forme de carrousel d'éléments. Chaque
+        élément du carrousel
+        contient une image représentant l'album, ainsi que des informations telles que le titre de l'album et l'artiste.
+        Les classes
+        sont utilisées pour structurer et styliser les éléments du carrousel de manière à créer une présentation
+        visuellement attrayante
+        des albums musicaux.</p>
+    <xmp>
+        <div class="carousel-wrapper">
+            <div class="carousel-item">
+                <figure>
+                    <img src="../src/assets/album-1.jpg" alt="Album 1">
+                </figure>
+                <div class="info">
+                    <h4><a>Sincèrement</a></h4>
+                    <p>Hamza</p>
+                </div>
+            </div>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Searchbar -->
+<section>
+    <h2>Barre de Recherche</h2>
+    <div class="search-bar">
+        <img src="../src/assets/loupe.png" alt="Loupe" class="loupe-icon">
+        <input type="text" placeholder="Rechercher">
+    </div>
+    <hr class="search-bar-hr">
+    <p class="class-description">Cette section affiche une barre de recherche avec une icône de loupe et un champ de
+        texte pour saisir des termes de recherche. Les classes sont utilisées pour positionner et styliser les éléments
+        de la barre de recherche de manière à ce qu'elle soit fonctionnelle et esthétiquement agréable.</p>
+    <xmp>
+        <div class="search-bar">
+            <img src="../src/assets/loupe.png" alt="Loupe" class="loupe-icon">
+            <input type="text" placeholder="Rechercher">
+        </div>
+        <hr class="search-bar-hr">
+    </xmp>
+</section>
+
+<!-- Styles de Basculer -->
+<section>
+    <h2>Styles de Basculer</h2>
+    <div class="toggle-form">
+        <div class="toggle-button toggle-button-blue">Bouton de Basculement</div>
+        <div class="toggle-button toggle-button-blue active">Bouton Actif</div>
+    </div>
+    <p class="class-description">Ces classes stylisent les boutons de bascule et définissent leurs états de couleur.</p>
+    <xmp>
+        <div class="toggle-form">
+            <div class="toggle-button toggle-button-blue">Bouton de Basculement</div>
+            <div class="toggle-button toggle-button-blue active">Bouton Actif</div>
+        </div>
+    </xmp>
+</section>
+
+<!-- Styles de Miniature -->
+<section>
+    <h2>Styles de Miniature</h2>
+    <div class="thumbnail-grid">
+        <div class="thumbnail thumbnail-rectangle">
+            <img src="../src/assets/nouveaute.jpg" alt="Miniature 1">
+            <h3>Miniature 1</h3>
+        </div>
+        <div class="thumbnail thumbnail-rectangle">
+            <img src="../src/assets/chill.jpg" alt="Miniature 1">
+            <h3>Miniature 2</h3>
+        </div>
+    </div>
+    <p class="class-description">Ces classes définissent le style des éléments de miniature et leur mise en page.</p>
+    <xmp>
+        <div class="thumbnail-grid">
+            <div class="thumbnail thumbnail-rectangle">
+                <img src="../src/assets/nouveaute.jpg" alt="Miniature 1">
+                <h3>Miniature 1</h3>
+            </div>
+            <div class="thumbnail thumbnail-rectangle">
+                <img src="../src/assets/chill.jpg" alt="Miniature 1">
+                <h3>Miniature 2</h3>
+            </div>
+        </div>
+    </xmp>
+</section>
+
+</body>
+</html>

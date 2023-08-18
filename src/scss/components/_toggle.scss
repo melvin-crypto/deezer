@@ -1,0 +1,32 @@
+@import'../partials/color';
+@import'../partials/font';
+
+.toggle-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $global-margin-padding;
+}
+
+.toggle-button {
+  padding: 10px $global-margin-padding;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+  &-blue {
+    border: 2px solid $toggle-extra-color;
+    background-color: transparent;
+    color: $toggle-extra-color;
+  }
+
+  &.active {
+    background-color: $toggle-extra-color;
+    color: $button-text-color;
+    border-color: $toggle-extra-color;
+  }
+
+  &:hover {
+    background-color: $toggle-extra-color;
+    color: $toggle-hover;
+  }
+}

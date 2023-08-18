@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Utilisateur | Deezer</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/js/nav.js"></script>
+    <script src="../src/js/music.js"></script>
+    <script src="../src/js/dropdown.js"></script>
+    <audio id="audio" src="../src/assets/gasolina.mp3"></audio>
+
+</head>
+<body>
+<main class="d-flex">
+    <aside>
+        <div class="container">
+            <a href="#" id="logo-deezer">
+                <img src="../src/assets/deezer.png" alt="Deezer">
+            </a>
+            <button id="menu-button"></button>
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="Utilisateur.html" class="active">Accueil</a></li>
+                    <li>Musique</li>
+                    <li>Podcasts</li>
+                    <li>Radios</li>
+                    <li>Concerts</li>
+                    <li><a href="Parcourir.html">Parcourir</a></li>
+                    <li>Favoris</li>
+                    <li>Coups de cœur</li>
+                    <li>Playlists</li>
+                    <li>Albums</li>
+                    <li>Artistes</li>
+                    <li>Podcasts</li>
+                    <li><a href="designGuide.html">DesignGuide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="section">
+        <section id="section-flow">
+            <div class="container">
+                <div class="search-bar">
+                    <img src="../src/assets/loupe.png" alt="Loupe" class="loupe-icon">
+                    <input type="text" placeholder="Rechercher">
+                </div>
+                <hr class="search-bar-hr">
+                <h2>Flow, la bande-son de tes émotions</h2>
+                <div class="d-flex justify-content-beetween">
+                    <h3>Un mix infini et personnalisé avec tes favoris et de belles découvertes</h3>
+                    <div class="dropdown" id="dropdown">
+                        <button type="button" class="dropdown-button">
+                            Moods
+                            <span class="dropdown-icon">
+                              <img src="../src/assets/chevron-down.png">
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <button>Genres</button>
+                            </li>
+                            <li class="dropdown-item">
+                                <button class="active">Moods</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-beetween align-items-center">
+                    <article class="flow-item rap">
+                        <a class="logo-link">
+                            <img id="play-button" class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Rap</h3>
+                    </article>
+                    <article class="flow-item pop">
+                        <a class="logo-link">
+                            <img class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Pop</h3>
+                    </article>
+                    <article class="flow-item soiree">
+                        <a class="logo-link">
+                            <img class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Soirée</h3>
+                    </article>
+                    <article class="flow-item chill">
+                        <a class="logo-link">
+                            <img class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Chill</h3>
+                    </article>
+                    <article class="flow-item jazz">
+                        <a class="logo-link">
+                            <img class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Jazz</h3>
+                    </article>
+                    <article class="flow-item amour">
+                        <a class="logo-link">
+                            <img class="logo-play" src="../src/assets/play.png" alt="Logo Play">
+                        </a>
+                        <h3>Amour</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="section-artist">
+            <div class="container">
+                <h2>Tes artistes préférés</h2>
+                <div class="artists-container">
+                    <article class="artist-item">
+                        <figure>
+                            <img src="../src/assets/artiste-1.jpg" alt="David Guetta">
+                        </figure>
+                        <h3>David Guetta</h3>
+                        <p>18,560,918 fans</p>
+                    </article>
+                    <article class="artist-item">
+                        <figure>
+                            <img src="../src/assets/artiste-2.jpg" alt="Calvin Harris">
+                        </figure>
+                        <h3>Calvin Harris</h3>
+                        <p>11,715,402 fans</p>
+                    </article>
+                    <article class="artist-item">
+                        <figure>
+                            <img src="../src/assets/artiste-3.jpg" alt="Jennifer Lopez">
+                        </figure>
+                        <h3>Jennifer Lopez</h3>
+                        <p>6,844,865 fans</p>
+                    </article>
+                    <article class="artist-item">
+                        <figure>
+                            <img src="../src/assets/artiste-4.jpg" alt="Jason Derulo">
+                        </figure>
+                        <h3>Jason Derulo</h3>
+                        <p>5,366,695 fans</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="section-mix">
+            <div class="container">
+                <h2>Mixes inspirés par</h2>
+                <h3>Découvre de nouveaux titres similaires à tes favoris</h3>
+                <div class="carousel-wrapper">
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-1.jpg" alt="Album 1">
+                        </figure>
+                        <div class="info">
+                            <h4><a href="Album.html">Sincèrement</a></h4>
+                            <p>Hamza</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-2.jpg" alt="Album 2">
+                        </figure>
+                        <div class="info">
+                            <h4>Jok'air</h4>
+                            <p>Melvin de Paris</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-3.jpg" alt="Album 3">
+                        </figure>
+                        <div class="info">
+                            <h4>Plus Comme Avant</h4>
+                            <p>L2B Gang</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-4.jpg" alt="Album 4">
+                        </figure>
+                        <div class="info">
+                            <h4>SheygueyVara2</h4>
+                            <p>Gradur</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-5.jpg" alt="Album 5">
+                        </figure>
+                        <div class="info">
+                            <h4>Sûr et certain</h4>
+                            <p>Zokush</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-6.jpg" alt="Album 6">
+                        </figure>
+                        <div class="info">
+                            <h4>2069'</h4>
+                            <p>PLK</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-7.jpg" alt="Album 7">
+                        </figure>
+                        <div class="info">
+                            <h4>Stratos</h4>
+                            <p>Kekra</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-8.jpg" alt="Album 8">
+                        </figure>
+                        <div class="info">
+                            <h4>Guapa</h4>
+                            <p>Guy2Bezbar</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src="../src/assets/album-9.jpg" alt="Album 9">
+                        </figure>
+                        <div class="info">
+                            <h4>Farewell</h4>
+                            <p>Prototype</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="music-bar">
+        <div class="d-flex">
+            <button id="music-bar-play-button">
+                <img class="logo-play" src="../src/assets/pause.png" alt="Logo Pause">
+            </button>
+            <span id="music-bar-info"></span>
+        </div>
+        <div id="music-bar-progress"></div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Légal</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">À propos des pubs</a></li>
+            </ul>
+        </nav>
+        <small>
+            © 2022 Deezer AB
+        </small>
+    </div>
+</footer>
+</body>
+</html>

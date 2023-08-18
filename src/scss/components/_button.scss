@@ -1,0 +1,31 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.button {
+  padding: 12px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: $button-border;
+  cursor: pointer;
+  width: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & img{
+    width: 20px!important;
+  }
+
+  &:hover {
+    background-color: $button-hover-background-color;
+  }
+
+  &-red {
+    background-color: $button-background-color;
+    color: $button-text-color;
+  }
+}
+
+.login-button{
+  margin: 0 auto;
+}

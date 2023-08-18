@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Deezer</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/js/login.js"></script>
+    <script src="../src/js/password-toggle.js"></script>
+</head>
+<body>
+<div class="container d-flex align-items-center flex-column">
+    <div class="toggle-form">
+        <button id="login-form-btn" class="toggle-button toggle-button-blue active" data-target="login-form">Connexion</button>
+        <button id="signup-form-btn" class="toggle-button toggle-button-blue" data-target="signup-form">Inscription</button>
+    </div>
+
+    <div class="login-form login-form-white">
+        <form id="login-form">
+            <h1 class="login-title login-title-black">Connexion à Deezer</h1>
+            <label class="login-label" for="username">Adresse email :</label>
+            <input class="login-input login-input-information login-input-border" type="text" id="username" name="username" required>
+            <div class="password-input-container">
+                <label class="login-label" for="password">Mot de passe :</label>
+                <div class="password-input-wrapper">
+                    <input class="login-input login-input-border login-input-password login-input-border-password" type="password" id="password" name="password" required>
+                    <span class="password-toggle" data-target="password">
+                      <img id="eye-icon" src="../src/assets/oeilFerme.png" alt="Toggle password visibility">
+                    </span>
+                </div>
+            </div>
+            <button class="button button-red login-button" type="submit">Se connecter</button>
+        </form>
+
+        <!-- Formulaire d'Inscription -->
+        <form id="signup-form" class="signup-form" style="display: none;">
+            <h1 class="login-title login-title-black">Inscription à Deezer</h1>
+            <label class="login-label" for="signup-email">Adresse email :</label>
+            <input class="login-input login-input-information login-input-border" type="text" id="signup-email" name="signup-email" required>
+
+            <label class="login-label" for="signup-username">Pseudo :</label>
+            <input class="login-input login-input-information login-input-border" type="text" id="signup-username" name="signup-username" required>
+
+            <div class="password-input-container">
+                <label class="login-label" for="signup-password">Mot de passe :</label>
+                <div class="password-input-wrapper">
+                    <input class="login-input login-input-border login-input-password" type="password" id="signup-password"
+                           name="signup-password" required>
+                    <span class="password-toggle" data-target="signup-password">
+                      <img id="signup-eye-icon" src="../src/assets/oeilFerme.png" alt="Toggle password visibility">
+                    </span>
+                </div>
+            </div>
+            <p class="password-hint">8 caractères min. <span class="password-strength">Faible</span></p>
+
+            <label class="login-label" for="signup-age">Âge :</label>
+            <input class="login-input login-input-information login-input-border" type="number" id="signup-age" name="signup-age" required>
+
+            <label class="login-label" for="signup-identity">Identité :</label>
+            <input class="login-input login-input-information login-input-border" type="text" id="signup-identity" name="signup-identity" required>
+
+            <label class="login-label" for="signup-agree">
+                <input type="checkbox" id="signup-agree" name="signup-agree" required>
+                En cliquant sur "Inscription", tu acceptes les <a href="#">Conditions générales d'utilisation</a> et la
+                <a href="#">Politique de protection des données</a>.
+            </label>
+            <button class="button button-red login-button" type="submit">S'inscrire</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.carousel-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px 30px;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: $carousel-background-color;
+  cursor: pointer;
+
+  figure {
+    margin: 0;
+    img {
+      width: $carousel-item-img;
+      height: $carousel-item-img;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .info {
+    h4 {
+      font-size: $h4-size;
+      margin: 0;
+      color: $title-color;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      & a{
+        color: $title-color;
+      }
+    }
+
+    p {
+      font-size: 10px;
+      margin: 0;
+      color: $p-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

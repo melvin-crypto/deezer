@@ -1,0 +1,137 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.flow-item {
+  text-align: center;
+  flex-basis: calc(16.5% - 50px);
+  position: relative;
+  overflow: hidden;
+  height: $flow-item-width;
+  width: $flow-item-width;
+  border-radius: $flow-item-border;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &:hover .logo-link{
+    opacity: 0.9;
+  }
+
+  &.rap {
+    background-image: url('../src/assets/rap.png');
+
+    &:hover::before {
+      background-color: $title1-description-color;
+    }
+
+    & h3 {
+      color: $title1-description-color;
+    }
+  }
+
+  &.pop {
+    background-image: url('../src/assets/pop.png');
+
+    &:hover::before {
+      background-color: $title2-description-color;
+    }
+
+    & h3 {
+      color: $title2-description-color;
+    }
+  }
+
+  &.soiree {
+    background-image: url('../src/assets/soiree.png');
+
+    &:hover::before {
+      background-color: $title3-description-color;
+    }
+
+    & h3 {
+      color: $title3-description-color;
+    }
+  }
+
+  &.chill {
+    background-image: url('../src/assets/chill.png');
+
+    &:hover::before {
+      background-color: $title4-description-color;
+    }
+
+    & h3 {
+      color: $title4-description-color;
+    }
+  }
+
+  &.jazz {
+    background-image: url('../src/assets/focus.png');
+
+    &:hover::before {
+      background-color: $title5-description-color;
+    }
+
+    & h3 {
+      color: $title5-description-color;
+    }
+  }
+
+  &.amour {
+    background-image: url('../src/assets/toi_moi.png');
+
+    &:hover::before {
+      background-color: $title6-description-color;
+    }
+
+    & h3 {
+      color: $title6-description-color;
+    }
+  }
+
+  & h3 {
+    font-size: $h3-size;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  z-index: 8;
+}
+
+@media screen and (max-width: 1000px) {
+  .flow-item {
+    width: 120px;
+    margin: 10px;
+    flex-basis: auto;
+  }
+}

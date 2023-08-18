@@ -1,0 +1,47 @@
+@import '../partials/color';
+
+.design-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & section {
+    text-align: center;
+    display: block;
+    margin: 75px;
+    color: $design-guide-color;
+
+    & div.center {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &.section-first {
+      margin: 50px 0 0 0;
+    }
+
+    &.section-footer {
+      margin: 75px 0;
+
+      & footer {
+        width: 100%;
+      }
+    }
+  }
+
+  & > p, & > ul, & > li {
+    color: $design-guide-color;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-input xmp {
+    zoom: 0.4;
+  }
+
+  .section-music-album xmp {
+    zoom: 0.45;
+  }
+}

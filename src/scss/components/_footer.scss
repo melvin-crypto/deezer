@@ -1,0 +1,60 @@
+@import '../partials/color';
+@import '../partials/font';
+
+footer {
+  background-color: $footer-background-color;
+  padding: 10px 0;
+  color: $footer-color;
+  margin: 0 0 0 auto;
+  width: $width-global-page-with-aside;
+
+  & a {
+    color: $footer-color;
+  }
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  & nav {
+    flex: 1;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  & li {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  & small {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Adjust the layout for smaller screens */
+@media screen and (max-width: 1000px) {
+  footer {
+    width: 100%;
+
+    & .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & nav {
+      margin-bottom: 10px;
+    }
+  }
+}

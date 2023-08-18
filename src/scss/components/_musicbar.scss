@@ -1,0 +1,28 @@
+@import '../partials/color';
+@import '../partials/font';
+
+#music-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $musicbar-background-color;
+
+  &-play-button {
+    height: $play-button-width;
+    width: $play-button-width;
+    margin-right: 10px;
+  }
+
+  &-info {
+    margin-left: 10px;
+    color: $p-color;
+  }
+
+  &-progress {
+    height: 5px;
+    background-color: $musicbar-progressbar;
+    width: 0;
+  }
+}

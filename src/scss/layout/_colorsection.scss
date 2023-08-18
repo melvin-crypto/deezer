@@ -1,0 +1,50 @@
+@import '../partials/color';
+@import '../partials/font';
+
+.section-color, .section-typography{
+  padding: $global-margin-padding;
+  background-color: $section-color-typography;
+  color: $p-second-color!important;
+}
+
+.section-color {
+  margin: $global-margin-padding;
+  width: 50%;
+}
+
+.color-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.color-circle {
+  width: $color-circle-width-height;
+  height: $color-circle-width-height;
+  border-radius: $color-circle-border;
+}
+
+.color-description {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .color-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-typography{
+    zoom: 0.7;
+  }
+}
